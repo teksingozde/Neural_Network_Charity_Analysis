@@ -141,8 +141,8 @@ It is divided into sub-categories to see the volumes of the values in the Classi
 
 There is no change in the hidden layer values in the optimization 2 and optimization 3 tables. In the first neural network in Optimization 3, the correlation between the weights of the parameters is quite high compared to Optimization 2. And in other neural networks, the connection values between the weights of the parameters do not change. For this reason, the correlation between the weights of the total parameters is also very high in Optimization 3 in general.
 
-#### Table 4. Comparing Optimization 2 and Optimization 3 Loss and Accuracy 
-<img width="590" alt="Screen Shot 2023-02-02 at 6 14 07 PM" src="https://user-images.githubusercontent.com/26927158/216497004-e5f92d1c-f871-4378-876f-96a33a9c54b1.png">
+#### Table 4. Comparing Loss and Accuracy for Optimization 2 and Optimization 3 
+<img width="592" alt="Screen Shot 2023-02-02 at 6 14 07 PM" src="https://user-images.githubusercontent.com/26927158/216497004-e5f92d1c-f871-4378-876f-96a33a9c54b1.png">
 
 In the Optimization 2 value, while the loss value increases, an increase in the accuracy value is observed. However, in Optimization 3, the loss and accuracy values increase together. In Optimization 3, there is an additional "Name" column in the data set compared to Optimization 2. This means that while accuracy increases, it also causes loss. In Optimization 2, some of the data has low rate of mistakes, while in Optimization 3, some big mistakes are made in some data. The increase in the loss value in Optimization 3 is due to the "Name" column.
 
