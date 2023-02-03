@@ -51,7 +51,7 @@ Artificial neural networks are examined in three main layers; Input Layer, Hidde
 Information is transmitted to the network through the input layer. They are processed in the intermediate layers and sent from there to the output layer. What is meant by information processing is to convert the information coming to the network into output by using the weight values of the network. In order for the network to produce the correct outputs for the inputs, the weights must have the correct values.
 If it consists of many neurons and hidden layers, it is called a multilayer artificial neural network. If it consists of a single layer, it is called a single layer artificial neural network.
 
-## Results
+## Comparing Before and After Optimization
 #### Graph 1. Application Type Density
 <img width="530" alt="Screen Shot 2023-02-02 at 1 51 38 PM" src="https://user-images.githubusercontent.com/26927158/216455741-a95fc1c1-4151-4618-939f-6fbef2dc60f8.png">
 
@@ -123,3 +123,27 @@ Tuning Algorithm is about tune the parameters of machine learning algorithm to g
 for instance, in neural network you can tune parameter like hidden layer, activation function, epoch, optimizer, batch_size, learning rate, Verbose, dropout, Cross Validation.
 This is the real example of enhancing model accuracy using one of parameters tuning algorithm.
 
+## Results
+Firstly, unlike our previous pre- and post-optimization study, the “Status” and “Special Considerations” columns were included in our data in this study. Thus, an increase occurred in our data set. For Optimization 3, a "Name" column was added to the data set and only the "EIN" column was not included in the study.
+
+#### Graph 3. Split Type Count for Application Type
+<img width="480" alt="Screen Shot 2023-02-02 at 6 16 36 PM" src="https://user-images.githubusercontent.com/26927158/216495333-7be7a52c-f5d5-43f8-a388-abfe20f6c63e.png">
+
+The graphic above is formed by filtering the overweight data as a result of dividing the values in the application_type column into subcategories. Since the only value with overweight is T3, all values outside of it are evaluated in the “Other” category. This graph also shows us the combination graph of the values in the "Other" category. Again, those values less than 500 from these values were not included in the study in any way, that is, restructuring of the data took place. Because data sets with a small volume will reduce the reliability, it was found appropriate to be removed.
+
+#### Graph 4. Split Type Count for Classification
+<img width="480" alt="Screen Shot 2023-02-02 at 6 28 09 PM" src="https://user-images.githubusercontent.com/26927158/216496678-7c0a4d35-c23b-4a00-a9eb-18bcaea3884b.png">
+
+It is divided into sub-categories to see the volumes of the values in the Classification column. No filtering is required for the Classification column. The graph above is also the distribution graph of the data.
+
+#### Table 3. Optimization 2 and Optimization 3 Neural Network Models
+<img width="823" alt="Screen Shot 2023-02-02 at 7 02 24 PM" src="https://user-images.githubusercontent.com/26927158/216496811-6e7bc97a-5c11-4212-8413-c4ec0ef3ce17.png">
+
+There is no change in the hidden layer values in the optimization 2 and optimization 3 tables. In the first neural network in Optimization 3, the correlation between the weights of the parameters is quite high compared to Optimization 2. And in other neural networks, the connection values between the weights of the parameters do not change. For this reason, the correlation between the weights of the total parameters is also very high in Optimization 3 in general.
+
+#### Table 4. Comparing Optimization 2 and Optimization 3 Loss and Accuracy 
+<img width="590" alt="Screen Shot 2023-02-02 at 6 14 07 PM" src="https://user-images.githubusercontent.com/26927158/216497004-e5f92d1c-f871-4378-876f-96a33a9c54b1.png">
+
+In the Optimization 2 value, while the loss value increases, an increase in the accuracy value is observed. However, in Optimization 3, the loss and accuracy values increase together. In Optimization 3, there is an additional "Name" column in the data set compared to Optimization 2. This means that while accuracy increases, it also causes loss. In Optimization 2, some of the data has low rate of mistakes, while in Optimization 3, some big mistakes are made in some data. The increase in the loss value in Optimization 3 is due to the "Name" column.
+
+However, in general, it can be said that the best result among the optimization values is Optimization 2 with low loss and high accuracy.
